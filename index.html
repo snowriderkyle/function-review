@@ -1,0 +1,99 @@
+<script> 
+// write a function that takes in three parameters and returns the sum of those three parameters
+var sum = function(a, b, c){
+	console.log("The sum of these numbers = " + (a + b + c));
+
+}
+	sum(12, 18, 10);
+	sum(1,1,1);
+
+// given a string, create a function that returns the last character in that string.
+// examples:
+// "cattywampus" --> s
+
+
+function lastLetter ( string ){
+	for (var i = 0; i < string.length; i++){
+		if (i == string.length -1){
+			console.log(string[i]);
+}}}
+lastLetter("Lolapalooza")
+
+// write a function that takes in one parameter and returns the cube of that parameter
+// examples:
+// 3 --> 27
+// 4 --> 64
+
+var cube = function(a){
+	console.log("The cube of " + a + ": " + a * a * a);
+}
+
+cube(5)
+
+// define a function that takes in a string and reverses it. you are not allowed to
+// call the "reverse" function (or any other string functions)
+
+var reversedWord = ""
+  
+function reverse(string) {
+  for (var i = string.length - 1, o = ''; i >= 0; i--) { 
+  		reversedWord += string[i]
+  	}
+  	return reversedWord;
+  }
+  console.log(reverse("BLURP"))
+
+// write a function that takes in two arrays of the same length as parameters. From those two arrays,
+		// create, then return an object which contains the elements of the first array as keys, and the
+		// elements of the second array as values.
+		// examples:
+		// ["exciting", "exotic"], ["markets", "britain"] --> { exciting: "markets", exotic: "britain" }
+		// ["a", "b", "c"], ["x", "y", "z"] --> { a: "x", b: "y", c: "z" }
+		
+object =  { 
+}
+
+
+function merger ( keys, values){
+	for ( i = 0; i < values.length; i++){
+		for ( x = 0; x < keys.length; x++){
+			object[keys[x]] = values[x];
+
+		}
+	}
+	return object
+}
+console.log ( merger ([ "Hoi", "Doei", "Dus" ],
+						 [ "Hoi", "Doei", "Dat"] ));
+
+
+		// examples:
+		// { exciting: "markets", exotic: "britain" } --> { keys: ["exciting", "exot
+		// Given an object with keys and values, create two arrays: one which contains the object's keys,
+		// and one which contains the object's values. Wrap this into a function which takes in one object
+		// that contains keys and values, and returns a different object that contains two keys. The first key
+		// should be named "keys" and will have the first array as a value. The second key should be named
+		// "values" and will have the second arrayic"], values: ["markets", "britain"] }
+		// { a: "x", b: "y", c: "z" } --> { keys: ["a", "b", "c"], values: ["x", "y", "z"] }
+
+
+myObject = { 
+		exciting: "britain",
+		exotic: "markets"
+		}
+		function takesInObject(object){ 
+			var newObject = {
+		keys: [],
+		values: []
+		}
+				for (var key in object){
+				newObject.keys.push(key)
+				newObject.values.push(object[key])
+			}
+			return newObject
+		}
+		console.log ( takesInObject ( myObject ))
+
+
+
+	</script>
